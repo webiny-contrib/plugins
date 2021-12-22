@@ -1,1 +1,1 @@
-Community Plugins
+Community supported 3rd party plugins for [Webiny](https://github.com/webiny/webiny-js).
