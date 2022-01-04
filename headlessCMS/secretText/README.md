@@ -5,17 +5,17 @@ This plugin is created by following the [community plugin contribution guide](#)
 ## Plugin setup for the contribution
 To set up the plugin with your Webiny project, please execute the following steps:
 
-### Clone plugins repository to the project root
+### 1. Clone plugins repository to the project root
 
 `git clone https://github.com/webiny-contrib/plugins`
 
-### Add secretText plugin to the workspaces
+### 2. Add secretText plugin to the workspaces
 Open the `package.json` present at project root and add `plugins/headlessCMS/secretText` line  under `workspaces`
 
-### Install dependencies and link the secretText workspace
+### 3. Install dependencies and link the secretText workspace
 Run `yarn` from the project root. 
 
-### Import Field Type Plugin 
+### 4. Import Field Type Plugin 
 
 Import the `secretTextFieldPlugin` in `apps/admin/code/src/plugins/headlessCms.ts`.
 
@@ -27,7 +27,7 @@ import secretTextFieldPlugin from "@webiny-contrib/secret-text/src/ui/secretText
 secretTextFieldPlugin
 ```
 
-### Import Field Renderer Plugin
+### 5. Import Field Renderer Plugin
 
 Import the `secretTextFieldRendererPlugin` plugin in `apps/admin/code/src/plugins/headlessCms.ts`
 
@@ -40,7 +40,7 @@ import secretTextFieldRendererPlugin from "@webiny-contrib/secret-text/src/ui/se
 secretTextFieldRendererPlugin()
 ```
 
-### Import Field To GraphQL Plugin
+### 6. Import Field To GraphQL Plugin
 
 Import `secretTextFieldPlugin` API plugin in `api/code/headlessCMS/src/index.ts`.
 
@@ -52,7 +52,7 @@ import secretTextFieldPlugin from "@webiny-contrib/secret-text/src/api/secretTex
 secretTextFieldPlugin
 ```
 
-### Import Storage Transformations Plugin
+### 7. Import Storage Transformations Plugin
 
 Import this `secretTextFieldStoragePlugin` plugin in `api/code/headlessCMS/src/index.ts`
 
@@ -65,7 +65,7 @@ secretTextFieldStoragePlugin()
 ```
 
 
-### Watch the admin and API application
+### 8. Watch the admin and API application
 To watch admin and API application, run the following command in the terminal.
 
 `yarn webiny watch apps/admin --env dev`  
