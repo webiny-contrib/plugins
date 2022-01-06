@@ -13,7 +13,7 @@ To set up the plugin with your Webiny project, please execute the following step
 Open the `package.json` present at project root and add `plugins/headlessCMS/secretText` line  under `workspaces`
 
 ### 3. Install dependencies and link the secretText workspace
-Run `yarn` from the project root. 
+Run `yarn link-workspaces` from the project root. 
 
 ### 4. Import Field Type Plugin 
 
