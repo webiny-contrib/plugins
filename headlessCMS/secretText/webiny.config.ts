@@ -1,7 +1,8 @@
-import { createBuildPackage } from "@webiny/project-utils";
+import { createBuildPackage, createWatchPackage } from "@webiny/project-utils";
 
 export default {
     commands: {
-        build: createBuildPackage({ cwd: __dirname })
+        build: createBuildPackage({ cwd: __dirname }),
+        watch: createWatchPackage({ cwd: __dirname })
     }
 };
