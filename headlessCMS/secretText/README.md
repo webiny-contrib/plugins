@@ -1,7 +1,7 @@
 ## Introduction
 Example Headless CMS plugin to demonstrate the community plugin contribution process.
 
-This plugin is created by following the [community plugin contribution guide](#) and [headless CMS custom field tutorial](https://www.webiny.com/docs/tutorials/headless-cms/create-a-webiny-headless-cms-custom-field-plugin).
+This plugin is created by following the [Community Plugins Guide](https://deploy-preview-378--webiny-docs.netlify.app/docs/community-plugins/introduction) and [Headless CMS Custom Field Plugin](https://www.webiny.com/docs/tutorials/headless-cms/create-a-webiny-headless-cms-custom-field-plugin) tutorial.
 
 
 ![Field Definition](./assets/field-definition.png)
@@ -30,20 +30,20 @@ This custom field plugin will store encrypted data into the database, and decryp
     </tr>
 </table>
 
-## How to contribute to this plugin?
+## How to Contribute to Secret Text Plugin?
 To set up the plugin with your Webiny project, please execute the following steps:
 
-### 1. Clone plugins repository to the project root
+### 1. Clone `plugins` Repository to the Project Root
 
 `git clone https://github.com/webiny-contrib/plugins`
 
-### 2. Add secretText plugin to the workspaces
+### 2. Add secretText Plugin to the Workspaces
 Open the `package.json` present at project root and add `plugins/headlessCMS/secretText` line  under `workspaces`
 
-### 3. Install dependencies and link the secretText workspace
+### 3. Install Dependencies and Link the Workspace
 Run `yarn && yarn link-workspaces` from the project root.
 
-### 4. Watch the `secretText` package
+### 4. Watch the `secretText` Package
 Run `yarn webiny watch  -p @webiny-contrib/secret-text` from the project root.
 This command will build the `secretText` package and watch for the further code changes.
 More details on `watch` command can be found [here](https://www.webiny.com/docs/how-to-guides/use-watch-command).
@@ -97,8 +97,8 @@ import secretTextFieldStoragePlugin from "@webiny-contrib/secret-text/api/secret
 secretTextFieldStoragePlugin()
 ```
 
-### 9. Watch the admin and API application
-To watch admin and API application, run the following command in the terminal.
+### 9. Watch the admin and api application
+To watch admin and api applications, run the following command from the project root.
 
 `yarn webiny watch apps/admin --env dev`  
 
@@ -106,13 +106,6 @@ To watch admin and API application, run the following command in the terminal.
 
 More details on `watch` command can be found [here](https://www.webiny.com/docs/how-to-guides/use-watch-command).
 
-### 10. Make the updates and raise the pull request
-You can make the respective code changes to `plugins/headlessCMS/secretText` directory.
+### 10. Make the Updates and Raise the Pull Request
+To improve the plugin, you can make the respective code changes to `plugins/headlessCMS/secretText` directory.
 Once the changes are ready, please create a pull request to https://github.com/webiny-contrib/plugins repository.
-
-
-
-
-
-
-
